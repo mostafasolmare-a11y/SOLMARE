@@ -1,0 +1,111 @@
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* اللوجو */
+.logo {
+  display: flex;
+  gap: 10px;
+}
+.logo .logoImage {
+  max-width: 50px;
+}
+
+.logo .logoWord {
+  width: 180px;
+}
+
+/* النص في النص */
+.center {
+  text-align: center;
+  flex: 1;
+  font-size: 14px;
+}
+
+/* السوشيال */
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+}
+
+.social .socialLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social a {
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.facebook {
+  color: #365cc9;
+}
+.instagram {
+  color: #e3498e;
+}
+.tiktok {
+  color: #e3e049;
+}
+.whatsapp {
+  color: #78ef54ff;
+}
+
+.social .socialLink:hover {
+  font-size: 18px;
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .social .socialLink {
+    justify-content: center;
+  }
+}
+
+/* موبايل */
+@media (max-width: 576px) {
+  .logo img {
+    height: 40px;
+    max-width: 150px;
+  }
+
+  .center {
+    font-size: 12px;
+  }
+
+  .social {
+    gap: 10px;
+  }
+
+  .social a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,140 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 120px 80px 60px 80px;
+  background: linear-gradient(0deg, #fff5cc 10%, #242424 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* العنوان الكبير */
+.bigTitle {
+  font-size: 70px;
+  font-weight: 900;
+  width: 25%;
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(180deg, #ffd700, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  line-height: 0.9;
+  position: relative;
+}
+
+.bigTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+/* السلايدر */
+.slider {
+  display: flex;
+  width: 40%;
+  max-width: 375px;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px 50px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* الوصف */
+.description {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+}
+
+.descTitle {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+.descText {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* 💻 تابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 50px;
+  }
+
+  .bigTitle {
+    width: 100%;
+    font-size: 56px;
+  }
+
+  .slider {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  .description {
+    width: 80%;
+    text-align: center;
+  }
+
+  .descText {
+    color: #333;
+  }
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 30px 30px 30px;
+  }
+
+  .bigTitle {
+    width: 100%;
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 20px;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .descTitle {
+    font-size: 20px;
+  }
+
+  .descText {
+    font-size: 14px;
+    color: #333;
+  }
+}

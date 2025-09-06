@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 5px 30px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #ffd700;
+}
+
+.word {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  align-self: flex-end;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding-right: 50px;
+  gap: 10px;
+}
+
+.nav a {
+  padding: 10px 14px 10px 10px;
+  color: #ffd700;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: black;
+  background-color: #fafafa;
+  transform: translateY(-3px);
+}
+
+.cartIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 7px 3px 6px;
+  border-radius: 50%;
+}
+
+/* ----------- Responsive ----------- */
+
+/* التابلت */
+@media (max-width: 992px) {
+  .header {
+    padding: 5px 20px;
+  }
+
+  .word {
+    font-size: 14px;
+  }
+
+  .nav {
+    gap: 5px;
+    padding-right: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+/* الموبايل */
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .word {
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    height: auto;
+    padding: 0px 0px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .cartIcon {
+    margin-top: 5px;
+  }
+}
