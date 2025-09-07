@@ -3,8 +3,7 @@ import Card from "./Card";
 import { useEffect, useRef, useState } from "react";
 
 function Men() {
-  const URL =
-    "https://api.sheety.co/f40e83c8b5e18303131dd886f89e7b16/solmareMen/men";
+  const URL = "/menData.json";
   const [products, setProducts] = useState([]);
   const sliderRef = useRef(null);
 
@@ -56,7 +55,7 @@ fetch(url)
       <div className={styles.slider}>
         {/*  الكارت  */}
         {products.map((item) => (
-          <Card key={item.id} item={item}></Card>
+          <Card key={item.productId} item={item}></Card>
         ))}
       </div>
 
