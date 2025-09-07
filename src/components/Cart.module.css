@@ -176,8 +176,9 @@
 /* تابلت */
 @media (max-width: 992px) {
   .cart {
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
     padding: 70px 50px;
+    border-radius: 0;
   }
 
   .cartWrapper {
@@ -202,8 +203,9 @@
 /* موبايل */
 @media (max-width: 576px) {
   .cart {
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
     padding: 70px;
+    border-radius: 0;
   }
 
   .title {

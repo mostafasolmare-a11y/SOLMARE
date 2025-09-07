@@ -1,0 +1,40 @@
+{
+  "men": [
+    {
+      "productId": 100,
+      "productName": "Product One",
+      "overview": "Product one overview",
+      "description": "One one one one one one one",
+      "basePrice": 100,
+      "discount": 10,
+      "currentPrice": 90.351,
+      "image": "https://i.ibb.co/xtSyJBj4/product-1-img.jpg",
+      "stock": 7,
+      "soldOut": "false"
+    },
+    {
+      "productId": 101,
+      "productName": "Product Two",
+      "overview": "Product two overview",
+      "description": "two two two two two two two",
+      "basePrice": 150,
+      "discount": 33,
+      "currentPrice": 100.958,
+      "image": "https://i.ibb.co/xtSyJBj4/product-1-img.jpg",
+      "stock": 6,
+      "soldOut": "true"
+    },
+    {
+      "productId": 102,
+      "productName": "Product Three",
+      "overview": "Product three overview",
+      "description": "three three three three three three three",
+      "basePrice": 200,
+      "discount": 20,
+      "currentPrice": 160.985,
+      "image": "https://i.ibb.co/xtSyJBj4/product-1-img.jpg",
+      "stock": 11,
+      "soldOut": "false"
+    }
+  ]
+}
